@@ -18,8 +18,6 @@
           
           shellHook = ''
             echo "Welcome to your development environment!"
-            echo "Node version: $(node --version)"
-            echo "Python version: $(python --version)"
           '';
         };
         
