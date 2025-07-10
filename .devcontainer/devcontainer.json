@@ -1,3 +1,12 @@
 {
-  "image": "ghcr.io/zombiezen/codespaces-nix"
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/nix:1": {}
+  },
+  "postCreateCommand": ["bash", ".devcontainer/setup.sh"],
+  "customizations": {
+    "vscode": {
+      "extensions": ["jnoortheen.nix-ide"]
+    }
+  }
 }
